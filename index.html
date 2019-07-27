@@ -80,11 +80,11 @@ function t() {
 }
 $(document).ready( function() {
  
-$('#inputtext').attr("value",decodeURIComponent(getUrlVars()["text"].replace('+', ' ')));
+$('#inputtext').attr("value",decodeURIComponent(getUrlVars()["text"]).replace('+', ' '));
 $("#main").text("");
 $("#main").append("<div id='fonts'></div>");
 for(var i=0; i<arr.length; i++) {
-$("#fonts").append("<div style='font-family:"+arr[i]+"'>"+decodeURIComponent(getUrlVars()["text"].replace('+', ' '))+"</div>");
+$("#fonts").append("<div style='font-family:"+arr[i]+"'>"+decodeURIComponent(getUrlVars()["text"]).replace('+', ' ')+"</div>");
 }
 
 //t();
