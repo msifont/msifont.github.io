@@ -1,0 +1,313 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+var arr= [
+"fontsaAutoSignatureotf",
+"fontsaAutoSignaturettf",
+"fontsAmalinattf",
+"fontsAmaniseotf",
+"fontsAmanisettf",
+"fontsAndoluciattf",
+"fontsAstinattf",
+"fontsAutumnChantotf",
+"fontsBeyondInfinityttf",
+"fontsBrainFlowerttf",
+"fontsBrittanySignaturettf",
+"fontsbromelloRegularotf",
+"fontsbromelloRegularttf",
+"fontsDemoBalnesttf",
+"fontsDenmarkttf",
+"fontsDKLemonYellowSunotf",
+"fontsflashbackDemootf",
+"fontsflashbackDemottf",
+"fontsFreeVersionAngelinattf",
+"fontsFrutillacriptttf",
+"fontsFrutillaScriptotf",
+"fontslambresiaotf",
+"fontsLunattf",
+"fontsMaddisonSignatureDEMOttf",
+"fontsMatildattf",
+"fontsMelindascriptttf",
+"fontsMemoriesttf",
+"fontsMidnightSignatureotf",
+"fontsMissesFontotf",
+"fontsMoonFlowerttf",
+"fontsMoonFlowerBoldttf",
+"fontsNaishilaDancingScriptttf",
+"fontsPriscilliaScriptotf",
+"fontsRalistootf",
+"fontsRalistottf",
+"fontsraustilaRegularotf",
+"fontsraustilaRegularttf",
+"fontsReactinttf",
+"fontsShellacleandafontttf",
+"fontsSilverPenotf",
+"fontsSilverPenttf",
+"fontsSimplicityotf",
+"fontsSimplicityttf",
+"fontssophiaotf",
+"fontssophiattf",
+"fontsStellaWilsonttf",
+"fontsSummerMorningsRegularotf",
+"fontsSweetHipsterttf",
+"fontsSweetPeattf",
+"fontsthebreakdownttf",
+"fontsTheSkinnyboldotf",
+"fontsTheSkinnyotf",
+];
+</script>
+
+<script>
+
+// Read a page's GET URL variables and return them as an associative array.
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+
+function t() {
+	alert($("body").text());
+}
+$(document).ready( function() {
+
+$('#inputtext').attr("value",getUrlVars()["text"]);
+$("#main").text("");
+$("#main").append("<div id='fonts'></div>");
+for(var i=0; i<arr.length; i++) {
+$("#fonts").append("<div style='font-family:"+arr[i]+"'>"+getUrlVars()["text"]+"</div>");
+}
+
+//t();
+});
+</script>
+
+<style>
+@font-face {
+font-family: "fontsaAutoSignatureotf";
+src: url("fonts/aAutoSignature.otf");
+}
+@font-face {
+font-family: "fontsaAutoSignaturettf";
+src: url("fonts/aAutoSignature.ttf");
+}
+@font-face {
+font-family: "fontsAmalinattf";
+src: url("fonts/Amalina.ttf");
+}
+@font-face {
+font-family: "fontsAmaniseotf";
+src: url("fonts/Amanise.otf");
+}
+@font-face {
+font-family: "fontsAmanisettf";
+src: url("fonts/Amanise.ttf");
+}
+@font-face {
+font-family: "fontsAndoluciattf";
+src: url("fonts/Andolucia.ttf");
+}
+@font-face {
+font-family: "fontsAstinattf";
+src: url("fonts/Astina.ttf");
+}
+@font-face {
+font-family: "fontsAutumnChantotf";
+src: url("fonts/AutumnChant.otf");
+}
+@font-face {
+font-family: "fontsBeyondInfinityttf";
+src: url("fonts/BeyondInfinity.ttf");
+}
+@font-face {
+font-family: "fontsBrainFlowerttf";
+src: url("fonts/BrainFlower.ttf");
+}
+@font-face {
+font-family: "fontsBrittanySignaturettf";
+src: url("fonts/BrittanySignature.ttf");
+}
+@font-face {
+font-family: "fontsbromelloRegularotf";
+src: url("fonts/bromello-Regular.otf");
+}
+@font-face {
+font-family: "fontsbromelloRegularttf";
+src: url("fonts/bromello-Regular.ttf");
+}
+@font-face {
+font-family: "fontsDemoBalnesttf";
+src: url("fonts/DemoBalnes.ttf");
+}
+@font-face {
+font-family: "fontsDenmarkttf";
+src: url("fonts/Denmark.ttf");
+}
+@font-face {
+font-family: "fontsDKLemonYellowSunotf";
+src: url("fonts/DKLemonYellowSun.otf");
+}
+@font-face {
+font-family: "fontsflashbackDemootf";
+src: url("fonts/flashbackDemo.otf");
+}
+@font-face {
+font-family: "fontsflashbackDemottf";
+src: url("fonts/flashbackDemo.ttf");
+}
+@font-face {
+font-family: "fontsFreeVersionAngelinattf";
+src: url("fonts/FreeVersionAngelina.ttf");
+}
+@font-face {
+font-family: "fontsFrutillacriptttf";
+src: url("fonts/Frutillacript.ttf");
+}
+@font-face {
+font-family: "fontsFrutillaScriptotf";
+src: url("fonts/FrutillaScript.otf");
+}
+@font-face {
+font-family: "fontslambresiaotf";
+src: url("fonts/lambresia.otf");
+}
+@font-face {
+font-family: "fontsLunattf";
+src: url("fonts/Luna.ttf");
+}
+@font-face {
+font-family: "fontsMaddisonSignatureDEMOttf";
+src: url("fonts/MaddisonSignatureDEMO.ttf");
+}
+@font-face {
+font-family: "fontsMatildattf";
+src: url("fonts/Matilda.ttf");
+}
+@font-face {
+font-family: "fontsMelindascriptttf";
+src: url("fonts/Melindascript.ttf");
+}
+@font-face {
+font-family: "fontsMemoriesttf";
+src: url("fonts/Memories.ttf");
+}
+@font-face {
+font-family: "fontsMidnightSignatureotf";
+src: url("fonts/MidnightSignature.otf");
+}
+@font-face {
+font-family: "fontsMissesFontotf";
+src: url("fonts/MissesFont.otf");
+}
+@font-face {
+font-family: "fontsMoonFlowerttf";
+src: url("fonts/MoonFlower.ttf");
+}
+@font-face {
+font-family: "fontsMoonFlowerBoldttf";
+src: url("fonts/MoonFlowerBold.ttf");
+}
+@font-face {
+font-family: "fontsNaishilaDancingScriptttf";
+src: url("fonts/NaishilaDancingScript.ttf");
+}
+@font-face {
+font-family: "fontsPriscilliaScriptotf";
+src: url("fonts/PriscilliaScript.otf");
+}
+@font-face {
+font-family: "fontsRalistootf";
+src: url("fonts/Ralisto.otf");
+}
+@font-face {
+font-family: "fontsRalistottf";
+src: url("fonts/Ralisto.ttf");
+}
+@font-face {
+font-family: "fontsraustilaRegularotf";
+src: url("fonts/raustila-Regular.otf");
+}
+@font-face {
+font-family: "fontsraustilaRegularttf";
+src: url("fonts/raustila-Regular.ttf");
+}
+@font-face {
+font-family: "fontsReactinttf";
+src: url("fonts/Reactin.ttf");
+}
+@font-face {
+font-family: "fontsShellacleandafontttf";
+src: url("fonts/Shellacleandafont.ttf");
+}
+@font-face {
+font-family: "fontsSilverPenotf";
+src: url("fonts/SilverPen.otf");
+}
+@font-face {
+font-family: "fontsSilverPenttf";
+src: url("fonts/SilverPen.ttf");
+}
+@font-face {
+font-family: "fontsSimplicityotf";
+src: url("fonts/Simplicity.otf");
+}
+@font-face {
+font-family: "fontsSimplicityttf";
+src: url("fonts/Simplicity.ttf");
+}
+@font-face {
+font-family: "fontssophiaotf";
+src: url("fonts/sophia.otf");
+}
+@font-face {
+font-family: "fontssophiattf";
+src: url("fonts/sophia.ttf");
+}
+@font-face {
+font-family: "fontsStellaWilsonttf";
+src: url("fonts/StellaWilson.ttf");
+}
+@font-face {
+font-family: "fontsSummerMorningsRegularotf";
+src: url("fonts/SummerMornings-Regular.otf");
+}
+@font-face {
+font-family: "fontsSweetHipsterttf";
+src: url("fonts/SweetHipster.ttf");
+}
+@font-face {
+font-family: "fontsSweetPeattf";
+src: url("fonts/SweetPea.ttf");
+}
+@font-face {
+font-family: "fontsthebreakdownttf";
+src: url("fonts/thebreakdown.ttf");
+}
+@font-face {
+font-family: "fontsTheSkinnyboldotf";
+src: url("fonts/TheSkinny-bold.otf");
+}
+@font-face {
+font-family: "fontsTheSkinnyotf";
+src: url("fonts/TheSkinny.otf");
+}
+</style>
+
+</head>
+<body>
+<div id="header"><form action="index.html" method="get">
+<input type="input" name="text" id="inputtext">
+<input type="submit" value="hiaaa">
+</form></div>
+<div id="main"></div>
+</body>
+</html>
