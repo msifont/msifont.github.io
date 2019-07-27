@@ -1,7 +1,7 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+ 
 <script>
 var arr= [
 "fontsaAutoSignatureotf",
@@ -79,12 +79,12 @@ function t() {
 	alert($("body").text());
 }
 $(document).ready( function() {
-
+ 
 $('#inputtext').attr("value",decodeURIComponent(getUrlVars()["text"]));
 $("#main").text("");
 $("#main").append("<div id='fonts'></div>");
 for(var i=0; i<arr.length; i++) {
-$("#fonts").append("<div style='font-family:"+arr[i]+"'>"+getUrlVars()["text"]+"</div>");
+$("#fonts").append("<div style='font-family:"+arr[i]+"'>"+decodeURIComponent(getUrlVars()["text"])+"</div>");
 }
 
 //t();
